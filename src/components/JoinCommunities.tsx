@@ -8,7 +8,7 @@ const JoinCommunities = ({ onBack }: { onBack: () => void }) => {
   };
 
   const handleJoinTelegram = () => {
-    window.open('https://t.me/bluepay247', '_blank');
+    window.open('t.me/Paygofficial', '_blank');
   };
 
   return (
