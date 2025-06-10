@@ -74,7 +74,7 @@ const About = ({ onBack }: { onBack: () => void }) => {
         <div className="border-t pt-6 mt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Us</h3>
           <div className="space-y-2 text-gray-700">
-            <p>Phone: +2348037750681</p>
+            <p>Phone: +2347086445037
             <p>Address: 33 Financial Street, Lagos, Nigeria</p>
           </div>
         </div>
