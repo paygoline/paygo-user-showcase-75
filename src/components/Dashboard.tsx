@@ -1,10 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
 import { useAuth } from '../contexts/AuthContext';
 import { useAutoSlide } from '../hooks/useAutoSlide';
-import { Bell, Eye, EyeOff, ArrowUp, CheckCircle, CreditCard, BarChart3, Database, Headphones, Globe, DollarSign, User } from 'lucide-react';
+import { Bell, Eye, EyeOff, ArrowUp, CheckCircle, CreditCard, BarChart3, Database, Headphones, Globe, DollarSign, User, Tv } from 'lucide-react';
 import BuyPayId from './BuyPayId';
 import Transfer from './Transfer';
 import Airtime from './Airtime';
@@ -56,17 +55,17 @@ const Dashboard = () => {
       action: () => setCurrentView('buy-pay-id')
     },
     { 
-      icon: <div className="w-8 h-8 bg-gray-600 rounded"></div>, 
+      icon: <Tv className="w-8 h-8 text-gray-600" />, 
       label: "Watch",
       action: () => window.open('https://t.me/bluepay247', '_blank')
     },
     { 
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />, 
+      icon: <BarChart3 className="w-8 h-8 text-orange-500" />, 
       label: "Airtime",
       action: () => setCurrentView('airtime')
     },
     { 
-      icon: <Database className="w-8 h-8 text-red-600" />, 
+      icon: <Database className="w-8 h-8 text-blue-500" />, 
       label: "Data",
       action: () => setCurrentView('data')
     },
@@ -81,12 +80,12 @@ const Dashboard = () => {
       action: () => setCurrentView('join-communities')
     },
     { 
-      icon: <DollarSign className="w-8 h-8 text-yellow-600" />, 
+      icon: <DollarSign className="w-8 h-8 text-yellow-500" />, 
       label: "Earn More",
       action: () => setCurrentView('earn-more')
     },
     { 
-      icon: <User className="w-8 h-8 text-gray-600" />, 
+      icon: <User className="w-8 h-8 text-blue-500" />, 
       label: "Profile",
       action: () => setCurrentView('profile')
     }
